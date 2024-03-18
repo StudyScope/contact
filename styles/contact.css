@@ -1,0 +1,196 @@
+:root {
+	--powerful-accent-color: orange;
+	--accent-color: #947cd9;
+	--bg-color: white;
+	--bg-blend-color: #f0f0f0;
+	--ease-text-color: #30313b;
+	--side-margins: 8vw;
+	--nav-background: #553285;
+}
+
+@font-face {
+	font-family: D-DIN;
+	src: url('../assets/fonts/D-DIN.ttf') format("truetype");
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	position: relative;
+}
+
+#background {
+	position: abosolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+	filter: blur(5px);
+}
+
+.nav {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 95%;
+	z-index: 1;
+	overflow: hidden;
+}
+
+.register:hover {
+	padding: 10px 20px 10px 20px;
+	transform: translateX(0);
+}
+
+.info {
+	position: absolute;
+	top: 0;
+	right: 0;
+	color: #222222;
+	background-color: white;
+	padding: 10px;
+	transform: translate(20%, -40%);
+	border-radius: 10px;
+	box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.2);
+	text-align: center;
+}
+
+#main-container {
+	position: absolute;
+	top: 50%;  
+    left: 50%; 
+    transform: translate(-50%, -50%);
+	width: 50vw;
+	height: 40vh;
+	color: white;
+	padding: 30px;
+	font-family: inter-semibold;
+	background-color: #0c75b6;
+	background-image: radial-gradient(at 64% 69%, hsla(199, 91%, 54%, 1) 0, hsla(199, 91%, 54%, 0) 50%),
+	radial-gradient(at 13% 89%, hsla(328, 88%, 58%, 1) 0, hsla(328, 88%, 58%, 0) 50%),
+	radial-gradient(at 7% 66%, hsla(255, 93%, 55%, 1) 0, hsla(255, 93%, 55%, 0) 50%),
+	radial-gradient(at 4% 92%, hsla(276, 93%, 62%, 1) 0, hsla(276, 93%, 62%, 0) 50%),
+	radial-gradient(at 46% 51%, hsla(48, 87%, 68%, 1) 0, hsla(48, 87%, 68%, 0) 50%),
+	radial-gradient(at 82% 97%, hsla(159, 91%, 55%, 1) 0, hsla(159, 91%, 55%, 0) 50%),
+	radial-gradient(at 3% 54%, hsla(258, 89%, 63%, 1) 0, hsla(258, 89%, 63%, 0) 50%),
+	radial-gradient(at 80% 73%, hsla(83, 85%, 53%, 1) 0, hsla(83, 85%, 53%, 0) 50%),
+	radial-gradient(at 46% 31%, hsla(309, 88%, 51%, 1) 0, hsla(309, 88%, 51%, 0) 50%),
+	radial-gradient(at 88% 52%, hsla(346, 87%, 60%, 1) 0, hsla(346, 87%, 60%, 0) 50%),
+	radial-gradient(at 31% 84%, hsla(320, 95%, 62%, 1) 0, hsla(320, 95%, 62%, 0) 50%),
+	radial-gradient(at 46% 26%, hsla(277, 90%, 69%, 1) 0, hsla(277, 90%, 69%, 0) 50%),
+	radial-gradient(at 36% 56%, hsla(176, 90%, 57%, 1) 0, hsla(176, 90%, 57%, 0) 50%),
+	radial-gradient(at 59% 34%, hsla(256, 89%, 57%, 1) 0, hsla(256, 89%, 57%, 0) 50%);
+
+	background-size: 150% 150%;
+	/*animation: gradient 15s ease infinite;*/
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	box-shadow: 0px 0px 30px 20px rgba(0, 0, 0, 0.2);
+	border-radius: 10px;
+	padding-bottom: 2%;
+}
+
+.wrapper {
+
+}
+
+#input-area {
+	margin-top: 5%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.input-text {
+	padding: 2%;
+	border-radius: 10px;
+	outline: none;
+	border: none;
+	width: 40%;
+	transition-duration: .3s;
+}
+
+.input-text:focus {
+	filter: drop-shadow(0px 0px 5px #fff);
+}
+
+.send-container {
+	display: grid;
+	place-items: center;
+}
+
+#send {
+	font-family: inter;
+	font-size: 120%;
+	background-color: #ededed;
+	outline: none;
+	border: none;
+	padding: 10px 20px 10px 20px;
+	border-radius: 100px;
+	color: #222222;
+	transition-duration: .3s;
+	cursor: pointer;
+}
+
+#send:hover {
+	background-color: white;
+}
+
+.buttons-container {
+	margin-top: 3%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.button {
+	font-family: monospace;
+	font-size: 200%;
+	background-color: transparent;
+	outline: none;
+	border: none;
+	border-radius: 3px;
+	padding: 1%;
+	width: 3vw;
+	height: 3vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #ededed;
+	transition-duration: .4s;
+	user-select: none;
+}
+
+.button:hover {
+	color: white;
+	cursor: pointer;
+}
+
+#title {
+	font-family: inter-semibold;
+	font-size: 200%;
+	text-align: center;
+}
+
+.disable {
+	color: rgba(255,255,255,0.5);
+}
+
+.disable:hover {
+	background-color: transparent;
+	cursor: auto;
+	color: rgba(255,255,255,0.5);
+}
+
+#message {
+	 resize: none;
+	 border: none;
+	 outline: none;
+	 font-family: inter;
+	 border-radius: 10px;
+	 padding: 10px;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>StudyScope | Contact</title>
+		<link rel="stylesheet" type="text/css" href="styles/nav.css">
+		<link rel="stylesheet" type="text/css" href="styles/contact.css">
+		<link rel="stylesheet" type="text/css" href="styles/sufi.css">
+
+		<link rel="shortcut icon" href="assets/images/logo.ico" />
+	</head>
+	<body>
+
+		<canvas id="background"></canvas>
+		<script src='scripts/contact.js'></script>	
+		<script src="scripts/slideupfadein.js"></script>
+
+
+		<div class="nav">
+			<div class="logo-wrap">
+				<a href="http://studyscopetutoring.com" class="logo-anchor">
+					<img id="logo" src="assets/images/magnifying.svg" alt="StudyScope Logo">
+					<span class="logo-text">
+						StudyScope
+					</span>
+				</a>
+			</div>
+
+			<div class="nav-buttons">
+				<div class="nav-buttons-container">
+					<a class="nav-button hover-underline-animation" href="http://studyscopetutoring.com#programs">
+						Programs
+					</a>
+					<a class="nav-button hover-underline-animation" href="http://studyscopetutoring.com/apply">
+						Join Our Team
+					</a>
+					<a class="nav-button hover-underline-animation" href="http://studyscopetutoring.com/contact">
+						Contact
+					</a>
+					<a class="nav-button hover-underline-animation" href="http://studyscopetutoring.com/company">
+						Company
+					</a>
+
+				</div>
+			</div>
+
+			<div class="nav-register">
+				<a class="nav-button register" href="javascript:document.write('this needs to redirect to the registering service')">
+					Register
+				</a>
+			</div>
+		</div>
+
+		<div id="main-container">
+			<div class="info">
+				info@studyscopetutoring.com<br>
+				(416) 846-3634
+			</div>
+			<div class="wrapper">
+				<div id="title">
+					Hello 👋 What's your name?
+				</div>
+
+				<div id="input-area">
+					<input type='text' class="input-text" id="input" autocomplete="off" placeholder="John Smith...">
+				</div>
+
+				<div class="buttons-container">
+					<button class="button disable" id="prev" onclick="prev()"><div>⬅</div></button>
+					<button class="button" id="next" onclick="next()"><div>➡</div></button>
+				</div>
+			</div>
+		</div>
+
+	</body>
+</html>

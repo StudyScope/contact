@@ -1,0 +1,140 @@
+:root {
+	--nav-text-color: #222222;
+	--nav-reg-color: #2f2f2f;
+	--logo-height: 35px;
+	--reg-spread: 4px;
+}
+
+a {
+	color: white;
+}
+
+@font-face {
+	font-family: inter;
+	src: url('../assets/fonts/Inter-Regular.otf') format("opentype");
+}
+
+@font-face {
+	font-family: inter-semibold;
+	src: url('../assets/fonts/Inter-SemiBold.otf') format("opentype");
+}
+
+body {
+	font-family: inter;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+.nav {
+	display: grid;
+	grid-template-columns: 1fr 2fr 1fr;
+	margin: 2vh 3vw 2vh 3vw;
+	font-size: 105%;
+}
+
+.logo-wrap {
+	display: table-cell;
+	font-family: inter-semibold;
+	font-size: 150%;
+	line-height: var(--logo-height);
+	vertical-align: middle;
+
+}
+
+#logo {
+	height: var(--logo-height);
+	vertical-align: middle;
+}
+
+.logo-text {
+	color: black;
+	display: inline-block;
+}
+
+.nav-buttons {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	color: var(--nav-text-color);
+}
+
+.nav-button {
+	text-decoration: none;
+	margin: 10px;
+	padding: 1px;
+	cursor: pointer;
+}
+
+.nav-register {
+	margin: 0;
+}
+
+.register {
+	float: right;
+	background-color: var(--nav-reg-color);
+	color: white;
+	padding: 10px 20px 10px 20px;
+	border-radius: 100px;
+	margin: 0;
+	transition-duration: .3s
+}
+
+.register:hover {
+	padding: 10px calc(20px + var(--reg-spread)) 10px calc(20px + var(--reg-spread));
+	transform: translateX(var(--reg-spread));
+}
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: var(--nav-text-color);
+}
+
+.hover-underline-animation:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--nav-text-color);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* For Chrome, Safari, and Opera */ 
+::-webkit-scrollbar {
+  width: 12px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Color of the track */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888; /* Color of the thumb */
+  border-radius: 6px; /* Rounded corners of the thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Color of the thumb on hover */
+}
+
+footer {
+	height: 15vh;
+	background-color: var(--nav-reg-color);
+	padding: 5vh;
+	text-align: center;
+	color: white;
+}
+
