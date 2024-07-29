@@ -103,6 +103,12 @@ window.addEventListener("resize", () => {
 	canvas.height = window.innerHeight;
 });
 
+window.addEventListener("keydown", function(event) {
+    if (event.key == "Enter"){
+        next();
+    }
+});
+
 window.addEventListener("mousemove", (event) => {
 	let rect = canvas.getBoundingClientRect();
 	mouse.x = event.clientX// - rect.left;
