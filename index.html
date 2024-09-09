@@ -17,6 +17,8 @@
 		<script src="scripts/slideupfadein.js"></script>
 
 
+		<script src="scripts/nav.js"></script>
+
 		<div class="nav">
 			<div class="logo-wrap">
 				<a href="http://studyscopetutoring.com" class="logo-anchor">
@@ -27,9 +29,21 @@
 				</a>
 			</div>
 
-			<div class="nav-buttons">
+			<div id="hamburger-container">
+				<div></div>
+				<button class="hamburger hamburger--slider" id="hamburger" type="button" onclick="hamburger()">
+				  <span class="hamburger-box">
+				    <span class="hamburger-inner"></span>
+				  </span>
+				</button>
+			</div>
+
+
+			
+
+			<div class="nav-buttons" id="nav-buttons">
 				<div class="nav-buttons-container">
-					<a class="nav-button hover-underline-animation" href="http://studyscopetutoring.com#programs">
+					<a class="nav-button hover-underline-animation" href="http://studyscopetutoring.com/programs">
 						Programs
 					</a>
 					<a class="nav-button hover-underline-animation" href="http://studyscopetutoring.com/our-team">
@@ -41,14 +55,45 @@
 					<a class="nav-button hover-underline-animation" href="http://studyscopetutoring.com/about-us">
 						About Us
 					</a>
-
+					
 				</div>
 			</div>
 
-			<div class="nav-register">
-				<a class="nav-button register" href="javascript:document.write('this needs to redirect to the registering service')">
+			<div class="nav-register" id="nav-register">
+				<a class="nav-button register" href="http://studyscopetutoring.com/programs">
 					Register
 				</a>
+			</div>
+		</div>
+
+		<div id="mobile-nav-buttons">
+			<div class="mobile-nav-button-container">
+				<a class="mobile-nav-button" href="http://studyscopetutoring.com/programs">
+					Programs
+				</a>
+			</div>
+			<div class="mobile-nav-button-container">
+				<a class="mobile-nav-button" href="http://studyscopetutoring.com/our-team">
+					Our Team
+				</a>
+			</div>
+			<div class="mobile-nav-button-container">
+				<a class="mobile-nav-button" href="http://studyscopetutoring.com/contact">
+					Contact
+				</a>
+			</div>
+			<div class="mobile-nav-button-container">
+				<a class="mobile-nav-button" href="http://studyscopetutoring.com/about-us">
+					About Us
+				</a>
+			</div>
+			<div class="mobile-nav-button-container">
+				<a class="mobile-nav-button" href="http://studyscopetutoring.com/programs">
+					Register
+				</a>
+			</div>
+			<div class="mobile-nav-space">
+
 			</div>
 		</div>
 
