@@ -5,13 +5,11 @@ function hamburger() {
 	if (hamburger_enabled) {
 		document.getElementById("hamburger").classList.remove("is-active");
 		document.getElementById("mobile-nav-buttons").style.display = "none";
-		document.getElementsByTagName('body')[0].style.overflowY = "visible";
 
 	}
 	else {
 		document.getElementById("hamburger").classList.add("is-active");
 		document.getElementById("mobile-nav-buttons").style.display = "contents";
-		document.getElementsByTagName('body')[0].style.overflowY = "hidden";
 
 	}
 

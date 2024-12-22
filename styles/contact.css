@@ -16,6 +16,7 @@
 body {
 	margin: 0;
 	padding: 0;
+	height: 100vh;
 	overflow: hidden;
 	position: relative;
 }
@@ -193,4 +194,20 @@ body {
 	 font-family: inter;
 	 border-radius: 10px;
 	 padding: 10px;
+}
+
+@media screen and (max-width:900px) {
+	#main-container {
+		width: 70vw;
+		position: relative;
+	}
+	.input-text {
+		padding: 4%;
+	}
+	.button {
+		padding: 7%;
+	}
+	.info {
+		transform: translate(10%, -40%);
+	}
 }

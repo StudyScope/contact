@@ -138,3 +138,35 @@ footer {
 	color: white;
 }
 
+#hamburger-container {
+	display: none;
+}
+
+#mobile-nav-buttons {
+	display: none;
+	z-index: 3;
+	magin-top: 20vh;
+}
+
+.mobile-nav-button {
+	color: #222;
+	font-size: 300%;
+	text-align: center;
+	margin: 3vh;
+
+}
+
+.mobile-nav-button-container {
+	display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobile-nav-space {
+	height: 100vh;
+}
+
+.mobile-nav-space-2 {
+	height: 8vh;
+}
+
