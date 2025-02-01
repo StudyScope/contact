@@ -88,6 +88,11 @@ a {
 	transform: translateX(var(--reg-spread));
 }
 
+#logo {
+	  height: calc(var(--logo-height) * 0.8);
+/*	  margin-left: 20px;*/
+	}
+
 .hover-underline-animation {
   display: inline-block;
   position: relative;
